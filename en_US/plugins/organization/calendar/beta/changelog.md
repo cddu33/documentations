@@ -1,8 +1,17 @@
 # Changelog Agenda
 
->**IMPORTANT**
+>**Important**
 >
->As a reminder if there is no information on the update, it means that it only concerns the updating of documentation, translation or text
+>If there is no information on the update, it means that it concerns only the update of documentation, translation or text.
+
+# 03/17/2023
+- Provision of an API to list, add, modify and delete an event.
+
+# 22/12/2022
+
+- Updated `fullcalendar` library from 3.10.5 to 6.0.1
+- Adding a view **Schedule** listing all the events of the week
+- Minimum Jeedom core version required : 4.2
 
 # 01/25/2022
 

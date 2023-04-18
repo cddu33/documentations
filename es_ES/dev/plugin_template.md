@@ -13,13 +13,13 @@ Aquí esta su estructura: primero una carpeta con el nombre de su complemento (s
   - ``config`` : Archivo de configuración del complemento.
   - ``ajax`` : Carpeta que contiene archivos de destino de llamadas AJAX.
   - ``i18n`` : Carpeta que contiene archivos .plugin traducción json.
+  - ``template`` : Carpeta que contiene las plantillas html para mosaicos específicos del equipo del complemento, en el tablero y las subcarpetas móviles.
 - ``desktop`` : Carpeta que contiene la vista "escritorio" del complemento (en contraste con la vista "móvil"").
   - ``js`` : Carpeta que contiene todos los archivos de tipo javascript para la interfaz del complemento.
   - ``php`` : Carpeta que contiene todos los archivos de tipo php para la interfaz del complemento.
   - ``css`` : Si es necesario, todos los archivos css del complemento, posiblemente incluidos *fuentes*.
   - ``modal`` : Carpeta que contiene el código modal del complemento.
   - ``img`` : Carpeta para las imágenes (png, jpg, etc.) que necesita el complemento.
-  - ``template`` : Carpeta que contiene las plantillas html para mosaicos específicos del equipo del complemento, en el tablero y las subcarpetas móviles.
 - ``plugin_info`` : Contiene los archivos que permiten a Jeedom calificar el complemento, instalarlo y configurarlo.
   - ``info.json`` : Archivo que contiene información básica sobre el complemento .Es obligatorio, de lo contrario, Jeedom no verá el complemento. Contiene, entre otras cosas, el identificador del módulo, descripción, instrucciones de instalación, etc
   - ``install.php`` : Archivo que contiene (si es necesario) los métodos para instalar y desinstalar el complemento.
@@ -54,7 +54,7 @@ Archivo que da instrucciones para instalar un complemento :
 
 Se compone de la siguiente manera :
 
-La primera parte comentada contiene la licencia (es mejor). El que se usa aquí indica que el archivo pertenece a Jeedom y que es de código abierto Luego viene la inclusión del núcleo de Jeedom (esto permite el acceso a funciones internas) Luego viene las 2 funciones :
+La primera parte comentada contiene la licencia (es mejor). El que se usa aquí indica que el archivo pertenece a Jeedom y que es de código abierto Luego viene la inclusión del núcleo de Jeedom (esto permite el acceso a las funciones internas) Luego vienen las 3 funciones :
 
 - ``pluginid_install()`` : método para instalar el complemento. Aquí la instalación agrega un trabajo cron a Jeedom
 - ``pluginid_update()`` : método para instalar el complemento. Se usa aquí para reiniciar la tarea cron

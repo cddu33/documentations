@@ -1,13 +1,43 @@
 # Changelog Jeedom V4.3
 
+## 4.3.17
+
+- Correction de bugs
+- Ajout d'un message lors de la mise à jour si l'utilisateur n'est pas sur la version stable
+
+## 4.3.16
+
+- Correction de bugs sur les designs 3D
+- Correction de bugs
+
+## 4.3.15
+
+- Interdiction de la traduction de Jeedom par les navigateurs (évite les erreur type marché.repo.php non trouvé)
+- Optimisation de la fonction de remplacement 
+
+## 4.3.14
+
+- reduction de la charge sur les DNS
+
+## 4.3.13
+
+- Bugfix sur **Outils / Remplacer**.
+
+## 4.3.12
+
+- Optimisation sur les historiques.
+- Bugfix Synthèse en mobile.
+- Bugfix widget shutter en mobile.
+- Bugfix des courbes de tuile avec info binaire.
+
 ## 4.3.11
 
-- Autorisation d'une réponse libre dans ask si vous mettez * dans le champs des réponses possibles
+- Autorisation d'une réponse libre dans *ask* si vous mettez * dans le champs des réponses possibles.
 - **Analyse / Historique** : Bugfix sur la comparaison d'historique (bug introduit en 4.3.10).
 - **Synthèse** : L'*Action depuis la synthèse* d'un objet est maintenant supportée sur la version mobile.
-- Correction des historiques lors d'utilisation de fonction d'agregation
-- Correction d'un bug sur l'installation d'un plugin par un autre plugin (Ex : mqtt2 installé par zwavejs)
-- Correction d'un bug sur les historique ou la valeur 0 pouvait écraser la valeur précedente
+- Correction des historiques lors d'utilisation de fonction d’agrégation.
+- Correction d'un bug sur l'installation d'un plugin par un autre plugin (Ex : mqtt2 installé par zwavejs).
+- Correction d'un bug sur les historique ou la valeur 0 pouvait écraser la valeur précédente.
 
 ## 4.3.10
 

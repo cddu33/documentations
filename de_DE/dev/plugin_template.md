@@ -13,13 +13,13 @@ Hier ist seine Struktur: Zuerst einen Ordner mit dem Namen Ihres Plugins (genaue
   - ``config`` : Plugin-Konfigurationsdatei.
   - ``ajax`` : Ordner mit AJA-AufrufzieldateienX.
   - ``i18n`` : Ordner mit Dateien .Plugin-Übersetzung json.
+  - ``template`` : Ordner mit den HTML-Vorlagen für Kacheln, die für die Geräte des Plugins spezifisch sind, im Dashboard und in den Unterordnern für Mobilgeräte.
 - ``desktop`` : Ordner mit der "Desktop" -Ansicht des Plugins (im Gegensatz zur "mobilen" Ansicht").
   - ``js`` : Ordner mit allen Javascript-Dateien für die Plugin-Schnittstelle.
   - ``php`` : Ordner mit allen PHP-Typ-Dateien für die Plugin-Schnittstelle.
   - ``css`` : Bei Bedarf alle CSS-Dateien des Plugins, ggf. inklusive *Schriftarten*.
   - ``modal`` : Ordner mit dem Modalcode des Plugins.
   - ``img`` : Ordner für die Bilder (png, jpg etc), die vom Plugin benötigt werden.
-  - ``template`` : Ordner mit den HTML-Vorlagen für Kacheln, die für die Geräte des Plugins spezifisch sind, im Dashboard und in den Unterordnern für Mobilgeräte.
 - ``plugin_info`` : Enthält die Dateien, mit denen Jeedom das Plugin qualifizieren, installieren und konfigurieren kann.
   - ``info.json`` : Datei mit grundlegenden Plugin-Informationen .Es ist obligatorisch, sonst wird Jeedom das Plugin nicht sehen. Es enthält unter anderem die Modulkennung, Beschreibung, Installationsanleitung usw
   - ``install.php`` : Datei, die (falls erforderlich) die Methoden zum Installieren und Deinstallieren des Plugins enthält.
@@ -54,7 +54,7 @@ Datei mit Anweisungen zum Installieren eines Plugins :
 
 Es setzt sich wie folgt zusammen :
 
-Der erste kommentierte Teil enthält die Lizenz (es ist besser). Die hier verwendete zeigt an, dass die Datei zu Jeedom gehört und Open Source ist. Dann kommt die Aufnahme des Kerns von Jeedom (dies ermöglicht den Zugriff auf interne Funktionen). Dann kommen die 2 Funktionen :
+Der erste kommentierte Teil enthält die Lizenz (es ist besser). Die hier verwendete zeigt an, dass die Datei zu Jeedom gehört und Open Source ist. Dann kommt die Einbeziehung von Jeedoms Kern (dies ermöglicht den Zugriff auf interne Funktionen). Dann kommen die 3 Funktionen :
 
 - ``pluginid_install()`` : Methode zur Installation des Plugins. Hier fügt die Installation Jeedom einen Cron-Job hinzu
 - ``pluginid_update()`` : Methode zur Installation des Plugins. Wird hier verwendet, um die Cron-Task neu zu starten

@@ -4,12 +4,249 @@
 >
 >If there is no information on the update, it means that it concerns only the update of documentation, translation or text.
 
-# XX/12/2022
+# 04/10/2023
 
 **Improvements**
 
-- Adding a tab *NVM management* on the network page. Save, download and send for now
-- Addition of the version of the *SDKs* on a controller's information page.
+- THE *refresh* can now go up to 100 seconds instead of 60
+- Switch to version *8.13.1* by ZwaveJsUI.
+- Changing the function *pollValue* for properties at *value* (thank you @superbricolo)
+
+**Configuration Changes**
+
+- Changing the configuration *Aeotec ZWA19 Water Sensor* to use the properties
+- Changing the configuration *Aeotec ZWA24 7in1* to use the properties
+- Changing the configuration *Everspring SM810* to use the properties
+- Editing a property *Velocity*
+- Editing the image *Dlink 510* (clipping)
+- Editing the image *Fibaro Fgs-213* (clipping)
+**Configuration Additions**
+
+- Added config *Sigma PZ701U* (properties : Switch)
+- Added config *Neo RC03Z* (properties : Central Scene, Battery)
+- Adding a sub-property *Heat sensor* in the property *Notification*
+- Added config *U-Fairy GR-201N* (properties : Switch)
+
+# 02/14/2023
+
+**Configuration Changes**
+
+- Changing the configuration *Aeotec ZWA24 7in1* to use the properties
+- Changing the configuration *Everspring SM810* to use the properties
+- Changing the configuration *Aeotec ZW122* to use the properties
+- Grouping of configurations *Danfoss Living Connect*
+- Changing the configuration *Fibaro FGR-223* change of power and energy endpoints
+- Changing the configuration *Fibaro FGR-223* addition of hardware and over-current notification
+- Changing the configuration *Fibaro FGS213* switch to endpoint 1 (firmware >=3.3) and added heat sensor and over-current notification
+- Editing the image *Aeotec ZWA24 7in1* (clipping)
+- Editing a property *Velocity*
+- Editing the image *Dlink 510* (clipping)
+- Editing the image *Fibaro Fgs-213* (clipping)
+- Editing the image *Fibaro Fgs-221* (clipping)
+- Editing the image *Fibaro Fgs-223* (clipping)
+- Editing the image *Fibaro Wall Plug* (clipping)
+- Editing the image *Fibaro Wall Plug GEN5* (clipping)
+
+**Configuration Additions**
+
+- Adding a sub-property *Heat sensor* in the property *Notification*
+- Added config *U-Fairy GR-201N* (properties : Switch)
+- Added config *Danfoss Boiler Relay* (properties : Switch)
+- Added config *Benext Alarm Sound* (properties : Switch)
+
+
+# 24/12/2022
+
+**Configuration Changes**
+
+- Changing the configuration *Aeotec ZWA008 Door Sensor* to use the properties
+- Changing the configuration *Qubino ZMNHLAX PWM Thermostat* to use the properties
+- Changing the configuration *Qubino ZMNHDA2 Dimmer* to use the properties
+- Changing the configuration *Fibaro FGR-223* modification of the endpoints of *refresh*
+- Changing the configuration *Fibaro Fgrgbwm442* to use the properties
+- Changing the configuration *Fibaro FGD212* added Notification properties
+- Changing the configuration *Qubino ZMNHBA2 Flush 2 Relays* to use the properties
+- Changing the configuration *Fibaro Walli Switch* added Notification properties
+- Changing the configuration *Dlink Dchz110* to use the properties
+- Changing the configuration *Domitech Smart Led Light* to use the properties
+- Changing the configuration *Duwii Switch* to use the properties
+- Changing the configuration *Everspring AN157* to use the properties
+- Changing the configuration *Popp Smoke Sensor* to use the properties
+- Changing the configuration *Duwii Edan 300* to use the properties
+- Editing the image *Duwii Dimmer* (clipping)
+- Editing the image *Aeotec ZWA008 Door Sensor* (clipping)
+- Editing the image *Duwii Switch* (clipping)
+- Editing the image *Duwii Edan 300* (clipping)
+- Editing the image *Duwii Blind Control* (clipping)
+- Editing the image *Duwii Remote* (clipping)
+- Editing the image *Duwii Zs3500* (clipping)
+- Editing the image *MCO Zipato p210 dimmer* (clipping)
+
+**Configuration Additions**
+
+- Adding a sub-property *Load error* in the property *Notification*
+- Adding a sub-property *Fibaro-effects2* in the property *Color*
+
+*If you are affected by a modification or addition of configuration, make a synchronization then reload the commands of the equipment by "recreating all the commands" after the update.*
+
+# 22/12/2022
+
+**Improvements**
+
+- Addition of a complete engine *Refresh management*, useful for some modules that do not correctly report some changes after action. Not to be used without a valid reason. The configuration files will carry the elements if necessary
+- Adding a tab *Options* on the equipment page. To view and configure Refreshes and possible future options
+- Addition of the number of *Refresh* on the page *Health*
+
+**Configuration Changes**
+
+- Changing the configuration *Qubino Luxy Smart Light* to use the properties
+- Changing the configuration *Popp Rain Meter* to use the properties
+- Changing the configuration *Fibaro FGR-223* first configuration to use the refresh engine (indeed this module has a known bug, it does not go up the positions or in erroneous ways when a movement is initiated by the Z-Wave) to recover the refresh (go to reload command by choosing "without recreating orders") you should see the "refresh" in the options tab.
+- Changing the configuration *Fibaro FGR-223* change of power and energy endpoints
+- Changing the configuration *Fibaro FGR-223* addition of hardware and over-current notification
+- Changing the configuration *Fibaro FGR-223* replace scene property with centralscene
+
+**Configuration Additions**
+
+- Added config *Qubino Luxy Smart Switch* (properties : Switch, Multilevel, Power, Energy, Color, Notification, NotificationEvent)
+- Adding the picture *Qubino Luxy Smart Switch*
+- Added config *Abus Security Center SHSG10000* (properties : Switch, Battery)
+- Adding the picture *Abus Security Center SHSG10000*
+- Adding a sub-property *Overall* in the property *Rain*
+- Adding a sub-property *Basic* in the property *Rain*
+- Adding a sub-property *Overload* in the property *Notification*
+- Adding a property *Water consumption*
+- Adding a property *Notificationevent*
+
+*If you are affected by a modification or addition of configuration, make a synchronization then reload the commands of the equipment by "recreating all the commands" after the update.*
+
+# 21/12/2022
+
+**Improvements**
+
+- Addition of the management of Nodes Notifications
+
+**Configuration Changes**
+
+- Changing the configuration *Aeotec Range Extender 6* to use the properties
+- Changing the configuration *Zipato PD01z* to use the properties
+- Changing the configuration *NeoCoolCam PD01zt* to use the properties
+- Changing the configuration *NeoCoolCam PD01z* to use the properties
+- Changing the configuration *Philio/Zipato Micromodule Energy Meter* to use the properties
+- Changing the configuration *Fibaro FGS214* to use the properties
+- Changing the configuration *Fibaro FGS213* switch to endpoint 0 (to be confirmed)
+- Configuration rollback *Fibaro FGD212 firmware 3.5*
+- Changing the configuration *Zipato Keypad* addition of property *NodeNotification*
+- Changing the configuration *Schlage Keypad* addition of property *NodeNotification*
+- Changing the configuration *Eurotronic Valve Spirit* to use the properties
+- Grouping of configurations *Danfoss Living Connect*
+- Changing the configuration *Danfoss Devolo Living Connect* to use the properties
+- Changing the configuration *Danfoss Living Connect* to use the properties
+- Changing the configuration *Danfoss Pop Radiator Thermostat* to use the properties
+- Changing the configuration *Philio PSP05* to use the properties
+- Changing the configuration *Zipato ZP3102* to use the properties
+- Changing the configuration *Vision ZP3102* to use the properties
+- Changing the configuration *Remotec ZXT-120* to use the properties
+- Changing the configuration *Everspring Ad147* to use the properties
+- Changing the configuration *Heatit ThermoFloor Ztemp2* to use the properties
+- Editing the image *Horstmann Secure SRT321* (clipping)
+- Editing the image *Remotec ZXT-120* (clipping)
+- Editing the image *Fibaro FGS 224* (clipping)
+- Editing the image *Fibaro FGS 213* (clipping)
+- Editing the image *Fibaro Button* (clipping)
+
+**Configuration Additions**
+
+- Added config *Cherubini ORA ZRX* (properties : Shutter, Notification)
+- Adding the picture *Cherubini ORA ZRX*
+- Added config *Heiman HS2WD Siren* (properties : Switch, Battery)
+- Adding the picture *Heiman HS2WD Siren*
+- Adding a sub-property *Power status* in the property *Notification*
+- Adding a property *NodeNotification*
+
+*If you are affected by a modification or addition of configuration, make a synchronization then reload the commands of the equipment by "recreating all the commands" after the update.*
+
+# 12/19/2022
+
+**Fixes**
+
+- Fix on some *missing attributes* on the health page on some nodes to avoid errors (without consequences) in the *http.error*
+
+**Improvements**
+
+- Passage of *ZwaveJS UI* to version *8.6.1*
+- Addition of the *S2 management* (ZwaveJS UI having made the expected changes)
+- Addition of *kind of security* on the page *node information*
+
+**Configuration Changes**
+
+- Changing the configuration *Heiman CO sensor* to use the properties
+- Changing the configuration *Heiman Smoke detector* to use the properties
+- Changing the configuration *Domux CO sensor* to use the properties
+- Changing the configuration *Vision Security ZS5101* to use the properties
+- Changing the configuration *HomeSeer Ez Motion* to use the properties
+- Changing the configuration *Shenzhen Smoke Detector* to use the properties
+- Changing the configuration *Vision Security ZD2102* to use the properties
+- Editing the image *Vision Security ZD2102* (clipping)
+- Changing the configuration *Aeotec Range Extender 7* to use the properties
+- Changing the configuration *Zipato ZD2102* to use the properties
+- Changing the configuration *Qubino Weather Station* to use the properties
+- Changing the configuration *Everspring ST814* to use the properties
+- Changing the configuration *Hank HKZW-SO08* to use the properties
+- Changing the configuration *Hank HKZW-SO01* to use the properties
+- Changing the configuration *Hank HKZW-SCN01* to use the properties
+- Changing the configuration *Philio PAT02-B* to use the properties
+- Editing the image *Philio PAT02-B* (clipping)
+- Editing the image *Abuse SHWM1000*
+
+**Configuration Additions**
+
+- Added config *Zipato Energy Meter* (properties : Power, Energy, Voltage, Current)
+- Added image for *Zipato Energy Meter*
+- Added config *Airzone Aidoo Zwave* (properties : Temperature, Thermostatmode, Thermostatmodeaction, Thermostatfanmode, Thermostatfanmodeaction, Thermostatsetpoint, Notification)
+- Added image for *Airzone Aidoo Zwave*
+- Adding a property *Thermostatfanmode*
+- Adding a property *Thermostatfanmodeaction*
+- Adding a property *Direction*
+- Adding a property *Velocity*
+- Adding a property *Rain*
+- Adding a property *Co*
+- Adding a sub-property *Basic motion* in the property *Motion*
+- Adding a sub-property *Dust-in-device* in the property *Notification*
+
+*If you are affected by a modification or addition of configuration, make a synchronization then reload the commands of the equipment by "recreating all the commands" after the update.*
+
+# 12/15/2022
+
+**Improvements**
+
+- Added the ability to display *explanatory assistants* on the page of certain equipment (Keypad Zipato for example to explain the operation of the codes)
+
+**Configuration Changes**
+
+- Changing the configuration *Aetoec Nanomote Quad* to use the properties
+- Changing the configuration *Fibaro Fgs211* to use the properties
+- Changing the configuration *Fibaro fgwreu111 Walli Shutter* passing a Shutter/level property and passing power and energy on endpoint 1
+- Changing the configuration *Zipato Keypad* to use the properties
+- Changing the configuration *Schlage Keypad* to use the properties
+
+**Configuration Additions**
+
+- Added config *Zooz ZEN17* (properties : Switch)
+- Added image for *Zooz ZEN17*
+- Added config *Abus Flood Sensor* (properties : Flood, Tamper, Battery)
+- Added image for *Abus Flood Sensor*
+- Adding a property *User Code*
+
+*If you are affected by a modification or addition of configuration, make a synchronization then reload the commands of the equipment by "recreating all the commands" after the update.*
+
+# 05/12/2022
+
+**Improvements**
+
+- Adding a tab *NVM management* on the network page. Backup, Download, Send and Restore
+- Adding a tab *Update* on a node page.
+- Addition of the version of *SDKs* on the information page of a controller or the modules raising it
 
 **Configuration Changes**
 
