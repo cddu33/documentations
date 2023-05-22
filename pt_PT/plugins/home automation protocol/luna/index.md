@@ -22,6 +22,10 @@ https://www.domadoo.fr/rma
 
 # Os recursos do plug-in Luna :
 
+> USB fixo
+
+No plugin Luna de 02/05/2023 o zigbee foi corrigido, você deve usar a porta ttyUSBLUNA-Zigbee. para usb externo isso também é corrigido automaticamente com o nome e/ou número de série.
+
 > Atualização do módulo de recuperação
 
 A atualização traz a imagem mais recente para o Luna; ele iráusar esta imagem durante uma recuperação (botão de reinicialização na caixa ou botão de recuperação no plugin).
@@ -76,5 +80,6 @@ Por enquanto, o plugin só leva em conta o acesso com DHCP.
 
 > 4G (compatível apenas com Luna 4G)
 
-Detecção automática de 4G interno à caixa, solicitar código pin e APN na configuração do plugin Luna.
+Detecção automática de 4G interno à caixa, por favor, vá até o plug-in para clicar em detectar o módulo LTE, caso não veja os parâmetros na parte de configuração, solicite código pin e APN na configuração do plug-in Luna.
 se o 4G detectar o lançamento de um módulo de conexão em segundo plano que muda automaticamente de ethernet para 4G, se necessário (ping para 8.8.8.8), o plugin SMS funciona ao mesmo tempo que o 4G no Luna 4G.
+As configurações são feitas na configuração do plugin.

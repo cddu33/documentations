@@ -1,30 +1,34 @@
 {
-	"id" : "wifilightV2",
-	"name" : "wifilightV2",
-	"description" : {
-        "fr_FR": "Pilote de nombreux périphériques wifi en local avec internet coupé : lampes, leds, prises, interrupteurs, thermostat, de marques diverses. Tapo, Kasa, Govee, Philips Wiz, Meross, Mystrom, MagicHome, Ewelink, Sonoff, Sonoff DIY, Mi.Light (Milight), Yeelight, Xiaomi Philips, TP-Link, Nanoleaf, H801, iHomma, arilux, Revogi, etc. Consulter la documentation pour connaitre la liste exacte des matériels compatibles.",
-        "en_US": "Control many wifi devices locally with no internet : lamps, LEDs, sockets, switches, thermostat, of various brands. Tapo, Kasa, Govee, Philips Wiz, Meross, Mystrom, MagicHome,Ewelink, Sonoff, Sonoff DIY, Mi.Light (Milight), Yeelight, Xiaomi Philips, TP-Link, Nanoleaf, H801, iHomma, arilux, Revogi, etc. Consult the documentation for the exact list of compatible equipment.",
-        "es_ES": "Pilota muchos dispositivos wifi localmente con corte de internet: lámparas, LED, enchufes, interruptores, termostato, de varias marcas. Tapo, Kasa, Govee, Philips Wiz, Meross, Mystrom, MagicHome, Ewelink, Sonoff, Sonoff DIY, Mi.Light (Milight), Yeelight, Xiaomi Philips, TP-Link, Nanoleaf, H801, iHomma, arilux, Revogi, etc. Consulte la documentación para obtener la lista exacta de equipos compatibles.",
-		"de_DE" : "Steuern Sie viele lokale Wifi-Geräte mit Internet-Cut: Lampen, LEDs, Steckdosen, Schalter, Thermostate verschiedener Marken. Tapo, Kasa, Govee, Philips Wiz, Meross, Mystrom, MagicHome, Ewelink, Sonoff, Sonoff DIY, Mi.Light (Milight), Yeelight, Xiaomi Philips, TP-Link, Nanoleaf, H801, iHomma, arilux, Revogi usw. Die genaue Liste der kompatiblen Geräte finden Sie in der Dokumentation."
+	"id": "proxmox",
+	"name": "Proxmox",
+	"description": "Plugin permettant la gestion d'un serveur Proxmox. Il est possible de récupérer toutes les ressources (noeuds, machine virtuelles, stockage...) et toutes leurs propriétés (statut, mémoire, CPU, disque, adresse IP, temps d'activité, list des snapshots...). Le plugin permet aussi de démarrer et arrêter les VMs et les containers ainsi que de prendre des snapshots et des backups. Il dispose également d'une page santé spécifique résumant l'ensemble des informations de vos équipements.",
+	"utilization": "Vous devez déjà avoir un serveur Proxmox et il sera nécessaire de créer un utilisateur dédié à Jeedom.",
+	"licence": "AGPL",
+	"author": "Mips",
+	"require": "4.2",
+	"category": "monitoring",
+	"display": "panel",
+	"hasDependency": false,
+	"hasOwnDeamon": true,
+	"maxDependancyInstallTime": 0,
+	"changelog": "https://mips2648.github.io/jeedom-plugins-docs/proxmox/#language#/changelog",
+	"documentation": "https://mips2648.github.io/jeedom-plugins-docs/proxmox/#language#/",
+	"changelog_beta": "https://mips2648.github.io/jeedom-plugins-docs/proxmox/#language#/changelog",
+	"documentation_beta": "https://mips2648.github.io/jeedom-plugins-docs/proxmox/#language#/",
+	"link": {
+		"forum": "https://community.jeedom.com/tags/plugin-proxmox",
+		"video": ""
 	},
-	"licence" : "AGPL",
-	"author" : "Bernard Caron",
-	"require" : "4.0",
-	"category" : "devicecommunication",
-	"hasDependency": true,
-	"hasOwnDeamon" : true,
-	"whiteListFolders": [
-		"/data"
+	"language": [
+		"fr_FR",
+		"en_US"
 	],
-	"link" : {
-		"forum":"https://community.jeedom.com/t/plugin-wifilightv2-discussion-generale/2439"
-	},
-	"changelog" : "https://bcaro.github.io/wifilightV2-doc/#language#/changelog",
-    "documentation" : "https://bcaro.github.io/wifilightV2-doc/#language#/",
-	"changelog_beta" : "https://bcaro.github.io/wifilightV2-doc/#language#/changelog",
-    "documentation_beta" : "https://bcaro.github.io/wifilightV2-doc/#language#/",
-	"language" : ["fr_FR","en_US","sp_SP","de_DE"],
-	"compatibility" : ["miniplus","smart","rpi","docker","diy","mobile","v4","atlas"]
+	"compatibility": [
+		"smart",
+		"atlas",
+		"rpi",
+		"docker",
+		"diy",
+		"v4"
+	]
 }
-
-
