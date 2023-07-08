@@ -1,36 +1,17 @@
 # Registro de cambios jeeZigbee
 
-# Registro de cambios jeeZigbee
-
-# Registro de cambios Zigbee2Mqtt
-
-# Plantilla de complemento de registro de cambios
-
 >**IMPORTANTE**
 >
 >Si no hay información sobre la actualización, significa que se trata solo de la actualización de la documentación, la traducción o el texto.
 
-# 19/01/2022
+# 07/03/2023
 
-- Optimizaciones V4.2
+- Solucionado un problema al enviar un comando de posicionamiento (tipo obturador)
 
-# 20/11/2020
+# 27/06/2023
 
-- Presentación oficial V4
-- Se agregaron elementos de información y parámetros para los comandos
+- Se solucionó un problema con la detección de ciertos módulos (incluido profalux)
 
-# 16/11/2020
+# 30/05/2023
 
-- Versión mínima de Jeedom: 3.3.39 (última actualización crítica)
-
-# 11/04/2020
-
-- Nueva presentación de la lista de objetos
-
-# 08/07/2020
-
-- Agregar comentarios
-
-# 17/05/2020
-
-- Actualización de documentación
+- Versión inicial
